@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="checkbox" id="bk" name="vehicle" onclick="checkbox();" value="Bike"> I Have a Bike<br></b>
+        <input type="checkbox" id="bk" name="vehicle" onclick="checkbox();" value="Bike">I Have a Car<br>
+        <input type="text" id="show" name="vehicle">
+        <br>
+        <button onclick="demo()">Click Me</button>
+    </form>
+    <script>
+        function checkbox() {
+            var checkboxs = document.getElementById('vehicle');
+            var checkboxsChecked = [];
+            //loop over them all
+            for (var i = 0; i < checkboxs.lenght; i++) {
+                if (checkboxs[i].checked) {
+                    checkboxsChecked.push(checkboxs[i].value);
+
+                }
+
+            }
+            document.getElementById("show").value = checkboxsChecked;
+        }
+    </script>
+</body>
+
+</html>

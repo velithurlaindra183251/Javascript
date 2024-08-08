@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="link" onchange="demo()">
+        <option value="https://google.com">Google</option>
+        <option value="https://tcs.com">tcs</option>
+        <option value="https://mouritech.com">Mouritech</option>
+        <option value="https://wipro.com">Wipro</option>
+    </select>
+    <script>
+        function demo() {
+            let x = document.getElementById('link').value
+           location.href=x
+        }
+    </script>
+</body>
+</html>

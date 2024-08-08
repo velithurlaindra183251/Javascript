@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else-Or-Operator</title>
+</head>
+<style>
+    #txt {
+        color: red;
+    }
+</style>
+
+<body>
+    <h2 id="txt"></h2>
+    <script>
+        /* let uid = prompt("Enter Your User id")
+        let pwd = prompt("Enter Your User password")
+        if (uid == "indra" || pwd == "velithurla") {
+            document.getElementById("txt").innerHTML = "Authorised User"
+        } else {
+            document.getElementById("txt").innerHTML = "Un-Authorised User"
+        }
+ */
+
+        let uid = prompt("Enter Your User id")
+        let pwd = prompt("Enter Your User password")
+        let age = prompt("Enter Your User age")
+        if (20 < age && uid == "indra" && pwd == "velithurla") {
+            document.getElementById("txt").innerHTML = "Authorised User"
+        } else {
+            document.getElementById("txt").innerHTML = "Un-Authorised User"
+        }
+
+    </script>
+</body>
+
+</html>

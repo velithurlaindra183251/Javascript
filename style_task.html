@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="bg">
+    <h3 id="txt">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </h3>
+    <select id="col" onchange="demo()">
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+    </select>
+    <script>
+        function demo() {
+            let x = document.getElementById("col").value
+            document.getElementById("txt").style.color = x
+            document.getElementById("bg").style.background = x
+            document.getElementById("txt").style.padding = "10px"
+
+        }
+    </script>
+</body>
+
+</html>

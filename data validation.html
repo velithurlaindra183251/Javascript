@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  <input type="text" id="uid">
+    <br>
+    <button onclick="demo()">Get Value</button>
+    <script>
+        function demo() {
+            let x = document.getElementById("uid").value;
+            if (x == "") {
+                alert("User id should not be empty")
+            } else {
+                alert("Thankyou")
+            }
+        }
+    </script> -->
+
+
+
+    <input type="text" id="uid">
+    <br>
+    <input type="text" id="pwd">
+    <br>
+    <button onclick="demo()">Get Value</button>
+    <script>
+        function demo() {
+            let x = document.getElementById("uid").value;
+            let y = document.getElementById("pwd").value;
+            /* if (x == "" || y == "") {
+                alert("Please Enter Value")
+            } else {
+                alert("Thankyou")
+            } */
+            if (x == "") {
+                alert("Uid should not be  empty")
+            } else if (y == "") {
+                alert("password should not be empty")
+            } else {
+                alert("Thankyou" + x)
+            }
+        }
+    </script>
+
+</body>
+
+</html>

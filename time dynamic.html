@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time Dynamic</title>
+</head>
+
+<body>
+    <h4 id="txt">
+        <script>
+
+            let d = new Date() //date objects
+            let h = d.getHours()
+            let m = d.getMinutes()
+            let s = d.getSeconds()
+            document.getElementById("txt").innerHTML = h + ":" + m + ":" + s
+        </script>
+</body>
+
+</html>

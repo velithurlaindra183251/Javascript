@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Mouritech</p>
+    <p>Madhapur</p>
+    <p>Hyderabad</p>
+    <button onclick="demo()">Click Me</button>
+    <script>
+        function demo(){
+
+        let para = document.getElementsByTagName('p')
+        /* para[0].innerHTML = "Hello Mouritech"
+        para[1].innerHTML = "Hello Madhapur"
+        para[2].innerHTML="Hello Hyderabad" */
+        para[0].style.color="red"
+        para[1].style.color="green"
+        para[2].style.color="blue"
+        }
+    </script>
+</body>
+
+</html>

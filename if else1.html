@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt {
+            color: rgb(0, 216, 18);
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="txt"></h3>
+    <h3 id="txt"></h3>
+    <script>
+        let uid = prompt("Enter Your User id")
+        let pwd = prompt("Enter Your User password")
+        if (uid == "indra" && pwd == "velithurla") {
+            document.getElementById("txt").innerHTML = "Authorised User"
+        } else {
+            document.getElementById("txt").innerHTML = "Un-Authorised User"
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table border="1px">
+        <tr>
+            <td> name</td>
+            <td>age </td>
+            <td>eligible</td>
+        </tr>
+
+        <tr>
+            <td id="n"> </td>
+            <td id="a"> </td>
+            <td id="e"></td>
+        </tr>
+    </table>
+    <script>
+        let name = prompt("enter your name")
+        let age = prompt("enter your age")
+        document.getElementById("n").innerHTML = name
+        document.getElementById("a").innerHTML = age
+        if (age<=18){
+            document.getElementById("e").innerHTML = "noteligible"
+        } else {
+            document.getElementById("e").innerHTML = " eligible"
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

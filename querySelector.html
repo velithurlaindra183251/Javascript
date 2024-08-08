@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="height: 200px; width: 200px; border: solid 2px black;" class="box"></div>
+  <!--   <p class="i">Mouritech</p>
+    <p class="i">Madhapur</p>
+    <p class="i">Hyderabad</p> -->
+    <select onchange="demo()" class="op">
+        <option>Red</option>
+        <option>Green</option>
+        <option>Orange</option>
+        <option>blue</option>
+        <option>Yellow</option>
+    </select>
+   <!-- <button onclick="demo()">Change </button> -->
+    <script>
+        function demo() {
+            let lap = document.querySelector('.box')
+            let color = document.querySelector('.op').value
+            lap.style.background=color
+        }
+    </script>
+</body>
+
+</html>

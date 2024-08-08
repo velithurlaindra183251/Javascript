@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date method</title>
+</head>
+
+<body>
+    <h3 id="txt"></h3>
+    <script>
+        let d = new Date()
+        let dt = d.getDate()
+        let mt = d.getMinutes()
+        let yr = d.getFullYear() + 1
+        let dy = d.getDay()
+        document.getElementById("txt").innerHTML = dt + "-" + mt + "-" + yr + "Day is " + dy
+    </script>
+</body>
+
+</html>

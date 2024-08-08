@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1 id="i"></h1>
+    <script>
+        let x = Math.round(Math.random() * 10)
+        let y = prompt("Enter Your Number")
+        if (x == y) {
+            document.write("value of random=" + x + "<br>")
+            document.write("value of given=" + y + "<br>")
+            document.getElementById("i").innerHTML = "Valid"
+        } else {
+            document.write("value of random=" + x + "<br>")
+            document.write("value of given=" + y)
+            document.getElementById("i").innerHTML = "Invalid"
+        }
+    </script> -->
+
+    <input type="number" id="indra">
+    <button onclick="i()">submit</button>
+    <script>
+        function i() {
+            const v = Math.round(Math.random() * 10);
+            const k = document.getElementById("indra").value;
+            if (v == k) {
+                alert("Good work!")
+            } else {
+                alert("Not matched")
+            }
+        }
+    </script>
+
+</body>
+
+</html>

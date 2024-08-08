@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let promise = new Promise((resolve, reject) => {
+            var x = "Velithurla Indra"
+            var y = "Velithurla Indra"
+            if (x == y) {
+                resolve()
+            } else {
+                reject()
+            }
+        })
+        promise.then(() => {
+            //.log("Valid")
+            document.write("Valid")
+        })
+        promise.catch(() => {
+            //console.log("Invalid")
+            document.write("Invalid")
+        })
+
+    </script>
+</body>
+
+</html>

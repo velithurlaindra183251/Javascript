@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  <h3>States Capital City is <span id="txt"></span></h3> -->
+    <select id="state" onchange="demo()">
+        <option>Telangana</option>
+        <option>Tamilnadu</option>
+        <option>AndhraPradesh</option>
+        <option>Karnataka</option>
+        <option>maharashtra</option>
+        <option>Rajasthan</option>
+    </select>
+    <select id="capital">
+        <option>capital</option>
+    </select>
+    <script>
+        function demo() {
+            let x = document.getElementById('state').value
+            if (x == "Telangana") {
+                document.getElementById("capital").innerHTML = '<option>Hyderabad</option>+<option>warangal</option><option>Karimnagar</option><option>meduk</option>'
+            } else if (x == "Tamilnadu") {
+                document.getElementById("capital").innerHTML = '<option>Chennai</option><option>kanchipuram</option><option>Coimbatore</option><option>Madurai</option>'
+            } else if (x == "AndhraPradesh") {
+                document.getElementById("capital").innerHTML = '<option>Amaravathi</option><option>Kadapa</option><option>Vijayawada</option><option>Guntur</option>'
+            } else if (x == "Karnataka") {
+                document.getElementById("capital").innerHTML = '<option>Bangulore</option><option>Mysuru</option><option>Mangaluru</option><option>Hampi</option>'
+            } else if (x == "maharashtra") {
+                document.getElementById("capital").innerHTML = '<option>Mumbai</option><option>Pune</option><option>Aurangabad</option><option>Nagpur</option>'
+            } else if (x == "Rajasthan") {
+                document.getElementById("capital").innerHTML = '<option>Jaipur</option><option>Jodhpur</option><option>Jaisalmer</option><option> Udaipur</option>'
+            } else {
+                alert("option not available")
+            }
+        }
+    </script>
+</body>
+
+</html>

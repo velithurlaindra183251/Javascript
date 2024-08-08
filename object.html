@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3 id="txt"></h3>
+    <script>
+        let person={
+            f_name: "kishor",
+            l_name: "kumar",
+            age: 23,
+            email: "kishor@gmail.com",
+            address:{
+                street: 12,
+                area: "madhapur",
+                city: "hyderabad",
+            }
+        }
+        // document.getElementById("txt").innerHTML = person.f_name
+        document.getElementById("txt").innerHTML=person.address.area
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="txt"></h1>
+    <form>
+        <input type="password" id="pwd" onkeyup="demo()">
+        <br>
+        <meter min="1" max="15" value="" id="mtr">
+        </meter>
+    </form>
+    <script>
+        function demo() {
+            let x = document.getElementById('pwd').value
+            let len = x.length
+            if (len <= 5) {
+                document.getElementById('mtr').value = 5
+                document.getElementById('txt').innerHTML = "low"
+            } else if (len <= 10) {
+                document.getElementById('mtr').value = 10
+                document.getElementById('txt').innerHTML = "medium"
+            } else {
+                document.getElementById('mtr').value = 10
+                document.getElementById('txt').innerHTML = "strong"
+            }
+        }
+    </script>
+</body>
+
+</html>
